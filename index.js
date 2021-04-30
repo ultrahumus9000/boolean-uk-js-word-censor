@@ -49,4 +49,9 @@ let sensoredtext = ''
 console.log(sensoredtext)
 console.log(`you changed ${count} words due to censorwords`)
 }
+
+//method 2
+function censoreasymode(text,replaceString,wordtosensor){
+  return text.split(wordtosensor).join(replaceString)
+}
  
