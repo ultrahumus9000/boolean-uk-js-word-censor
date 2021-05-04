@@ -49,7 +49,11 @@ let sensoredtext = ''
  }
 console.log(sensoredtext)
 console.log(`you changed ${count} words due to censorwords`)
-return [sensoredtext, `you changed ${count} words due to censorwords`]
+// return [sensoredtext, `you changed ${count} words due to censorwords`]
+return{
+  text: sensoredtext,
+  count: count
+}
 }
 
 //method 2 but i have not figured out about how to count
