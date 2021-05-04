@@ -50,7 +50,7 @@ console.log(sensoredtext)
 console.log(`you changed ${count} words due to censorwords`)
 }
 
-//method 2
+//method 2 but i have not figured out about how to count
 function censoreasymode(text,replaceString,wordtosensor){
   return text.split(wordtosensor).join(replaceString)
 }
