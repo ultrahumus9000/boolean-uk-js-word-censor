@@ -21,14 +21,15 @@ console.log(text)
 function censorword(searchword,replacementword){
   const textArray = text.split(' ')
   for(let i = 0; i <= textArray.length ; i++ ){
-    if( textArray[i] === searchword){
+    if( textArray[i].toLowerCase.includes(searchword.toLowerCase)){
       textArray[i] = replacementword
     }
   }
- let text = ''
-   for(let item of textArray ){
-     text = text + item
-   }
+  text.join(' ')
+//  let text = ''
+//    for(let item of textArray ){
+//      text = text + item
+//    }
   console.log(text)
 }
 // task 1 finished and here is another basic task due to misunderstanding the task
@@ -48,6 +49,7 @@ let sensoredtext = ''
  }
 console.log(sensoredtext)
 console.log(`you changed ${count} words due to censorwords`)
+return [sensoredtext, `you changed ${count} words due to censorwords`]
 }
 
 //method 2 but i have not figured out about how to count
